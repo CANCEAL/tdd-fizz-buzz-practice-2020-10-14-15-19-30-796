@@ -90,6 +90,6 @@ public class FizzBuzzTest {
         //when
         String given = fizzBuzz.countOff(orderNumber);
         //then
-        assertEquals(orderNumber, given);
+        assertEquals(String.valueOf(orderNumber), given);
     }
 }
