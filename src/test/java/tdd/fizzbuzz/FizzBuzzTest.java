@@ -48,4 +48,15 @@ public class FizzBuzzTest {
         //then
         assertEquals("FizzBuzz", given);
     }
+
+    @Test
+    void should_return_FizzWhizz_when_count_off_given_order_number_multiple_to_3_and_7() {
+        //given
+        int orderNumber = 21;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String given = fizzBuzz.countOff(orderNumber);
+        //then
+        assertEquals("FizzWhizz", given);
+    }
 }
