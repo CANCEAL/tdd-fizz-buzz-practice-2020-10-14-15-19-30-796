@@ -9,6 +9,9 @@ public class FizzBuzz {
     private static final String WHIZZ = "Whizz";
 
     public String countOff(int orderNumber) {
+        if (orderNumber%MODULO_3 == 0 && orderNumber%MODULO_5 == 0) {
+            return "FizzBuzz";
+        }
         if (orderNumber%MODULO_3 == 0) {
             return FIZZ;
         }
