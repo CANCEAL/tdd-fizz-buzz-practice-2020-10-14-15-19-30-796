@@ -7,6 +7,10 @@ public class FizzBuzz {
     public String countOff(int orderNumber) {
         if (orderNumber%MODULO_3 == 0) {
             return FIZZ;
-        } return null;
+        }
+        if (orderNumber%5 == 0) {
+            return "Buzz";
+        }
+        return null;
     }
 }
