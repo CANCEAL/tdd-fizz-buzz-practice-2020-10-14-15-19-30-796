@@ -61,7 +61,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_BuzzWhizz_when_count_of_given_order_number_multiple_to_5_and_7() {
+    void should_return_BuzzWhizz_when_count_off_given_order_number_multiple_to_5_and_7() {
         //given
         int orderNumber = 35;
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -69,5 +69,16 @@ public class FizzBuzzTest {
         String given = fizzBuzz.countOff(orderNumber);
         //then
         assertEquals("BuzzWhizz", given);
+    }
+
+    @Test
+    void should_return_FizzBuzzWhizz_when_count_off_given_order_number_multiple_to_3_and_5_and_7() {
+        //given
+        int orderNumber = 105;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String given = fizzBuzz.countOff(orderNumber);
+        //then
+        assertEquals("FizzBuzzWhizz", given);
     }
 }
