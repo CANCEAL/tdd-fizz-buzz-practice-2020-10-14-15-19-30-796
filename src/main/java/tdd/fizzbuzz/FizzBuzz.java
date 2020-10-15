@@ -33,7 +33,8 @@ public class FizzBuzz {
         }
         if (orderNumber%MODULO_7 == 0) {
             return WHIZZ;
+        } else {
+            return String.valueOf(orderNumber);
         }
-        return null;
     }
 }
