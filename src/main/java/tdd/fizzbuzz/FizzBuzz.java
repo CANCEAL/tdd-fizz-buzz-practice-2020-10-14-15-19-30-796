@@ -7,10 +7,11 @@ public class FizzBuzz {
     private static final String BUZZ = "Buzz";
     private static final int MODULO_7 = 7;
     private static final String WHIZZ = "Whizz";
+    private static final String FIZZBUZZ = "FizzBuzz";
 
     public String countOff(int orderNumber) {
         if (orderNumber%MODULO_3 == 0 && orderNumber%MODULO_5 == 0) {
-            return "FizzBuzz";
+            return FIZZBUZZ;
         }
         if (orderNumber%MODULO_3 == 0) {
             return FIZZ;
