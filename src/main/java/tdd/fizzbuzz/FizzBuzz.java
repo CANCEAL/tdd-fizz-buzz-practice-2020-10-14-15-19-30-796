@@ -13,6 +13,9 @@ public class FizzBuzz {
         if (orderNumber%MODULO_5 == 0) {
             return BUZZ;
         }
+        if (orderNumber%7 == 0) {
+            return "Whizz";
+        }
         return null;
     }
 }
