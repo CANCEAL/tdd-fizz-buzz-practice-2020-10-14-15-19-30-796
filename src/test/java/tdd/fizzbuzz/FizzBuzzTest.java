@@ -81,4 +81,15 @@ public class FizzBuzzTest {
         //then
         assertEquals("FizzBuzzWhizz", given);
     }
+
+    @Test
+    void should_return_actual_number_when_count_off_given_number_is_not_multiple_to_special_number() {
+        //given
+        int orderNumber = 1;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String given = fizzBuzz.countOff(orderNumber);
+        //then
+        assertEquals(orderNumber, given);
+    }
 }
